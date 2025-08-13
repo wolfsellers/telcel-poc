@@ -355,38 +355,6 @@
           { "name": "Option 1", "value": "option1" },
           { "name": "Option 2", "value": "option2" }
         ]
-      },
-      {
-        "component": "select",
-        "label": "Select",
-        "name": "select",
-        "valueType": "string",
-        "options": [
-          { "name": "Option 1", "value": "option1" },
-          { "name": "Option 2", "value": "option2" }
-        ]
-      },
-      {
-        "component": "tab",
-        "label": "Tab 1",
-        "name": "tab1"
-      },
-      {
-        "component": "text-input",
-        "label": "Text 1",
-        "name": "text1",
-        "valueType": "string"
-      },
-      {
-        "component": "tab",
-        "label": "Tab 2",
-        "name": "tab2"
-      },
-      {
-        "component": "text-input",
-        "label": "Text 2",
-        "name": "text2",
-        "valueType": "string"
       }
     ]
   }
