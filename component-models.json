@@ -292,16 +292,6 @@
         "valueType": "string"
       },
       {
-        "component": "aem-content",
-        "name": "reference",
-        "value": "",
-        "label": "AEM Content Picker",
-        "valueType": "string",
-        "validation": {
-              "rootPath": "/content/refresh"
-          }
-      },
-      {
         "component": "boolean",
         "label": "Boolean",
         "name": "boolean",
