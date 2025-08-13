@@ -5,6 +5,6 @@
     "/content/telcel-poc-aem/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/telcel-poc/"
+    "/content/telcel-poc-aem/"
   ]
 }
