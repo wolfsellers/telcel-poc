@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p153442-e1606276.adobeaemcloud.com/bin/franklin.delivery/wolfsellers/telcel-poc/main"
+    url: "https://author-p153442-e1604645.adobeaemcloud.com/bin/franklin.delivery/wolfsellers/telcel-poc/main"
     type: "markup"
     suffix: ".html"

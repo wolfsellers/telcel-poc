@@ -1,8 +1,8 @@
 {
   "mappings": [
-    "/content/telcel-poc/:/",
-    "/content/telcel-poc/configuration:/.helix/config.json",
-    "/content/telcel-poc/metadata:/metadata.json"
+    "/content/telcel-poc-aem/:/",
+    "/content/telcel-poc-aem/configuration:/.helix/config.json",
+    "/content/telcel-poc-aem/metadata:/metadata.json"
   ],
   "includes": [
     "/content/telcel-poc/"
