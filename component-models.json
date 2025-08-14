@@ -222,7 +222,10 @@
         "component": "reference",
         "name": "image",
         "label": "Image",
-        "multi": false
+        "multi": true,
+        "validation": {
+            "rootPath": "/content/dam/telcel-poc-site"
+        }
       }
     ]
   }
