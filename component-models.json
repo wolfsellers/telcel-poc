@@ -216,19 +216,18 @@
     ]
   },
   {
-    "id": "texto_informativo",
+    "id": "banner_promociones",
     "fields": [
       {
-        "component": "text",
-        "name": "titulo",
-        "label": "Título Principal"
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": true
       },
       {
-        "component": "richtext",
-        "name": "contenido",
-        "value": "",
-        "label": "Contenido",
-        "valueType": "string"
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text"
       }
     ]
   },

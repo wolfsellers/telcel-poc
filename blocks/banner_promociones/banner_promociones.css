@@ -1,0 +1,13 @@
+.slider {
+  margin: 10px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  opacity: 1;
+  transition: opacity 0.8s;
+  position: absolute;
+}
