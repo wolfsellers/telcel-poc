@@ -220,12 +220,17 @@
     "fields": [
       {
         "component": "reference",
-        "name": "image",
-        "label": "Image",
+        "name": "images",
+        "label": "Imágenes",
+        "valueType": "string",
         "multi": true,
-        "validation": {
-            "rootPath": "/content/dam/telcel-poc-site"
-        }
+        "accept": ["image/*"]
+      },
+      {
+        "component": "text",
+        "name": "captions",
+        "label": "Leyendas (opcional, una por imagen)",
+        "multi": true
       }
     ]
   }
