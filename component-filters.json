@@ -40,5 +40,11 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "banner_promociones",
+    "components": [
+      "imagen_promocion"
+    ]
   }
 ]
