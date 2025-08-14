@@ -216,96 +216,13 @@
     ]
   },
   {
-    "id": "quote",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "quote",
-        "value": "",
-        "label": "Quote",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "author",
-        "label": "Author",
-        "value": ""
-      },
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Background Color",
-        "description": "The quote background color",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Red",
-            "value": "bg-red"
-          },
-          {
-            "name": "Green",
-            "value": "bg-green"
-          },
-          {
-            "name": "Blue",
-            "value": "bg-blue"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "teaser",
+    "id": "banner_promociones",
     "fields": [
       {
         "component": "reference",
         "name": "image",
-        "label": "Imagen",
+        "label": "Image",
         "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Texto Alternativo",
-        "required": true
-      },
-      {
-        "component": "richtext",
-        "name": "textContent_text",
-        "label": "Texto Principal",
-        "valueType": "string",
-        "required": true
-      },
-      {
-        "component": "aem-content",
-        "name": "textContent_cta",
-        "label": "URL CTA",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "textContent_ctaText",
-        "label": "Texto CTA",
-        "valueType": "string"
-      },
-      {
-        "component": "boolean",
-        "label": "Boolean",
-        "name": "boolean",
-        "valueType": "boolean"
-      },
-      {
-        "component": "checkbox-group",
-        "label": "Checkbox Group",
-        "name": "checkbox",
-        "valueType": "string[]",
-        "options": [
-          { "name": "Option 1", "value": "option1" },
-          { "name": "Option 2", "value": "option2" }
-        ]
       }
     ]
   }
