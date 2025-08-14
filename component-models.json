@@ -233,5 +233,22 @@
         "multi": true
       }
     ]
+  },
+  {
+    "id": "texto_informativo",
+    "fields": [
+      {
+        "component": "text",
+        "name": "titulo",
+        "label": "Título Principal"
+      },
+      {
+        "component": "richtext",
+        "name": "contenido",
+        "value": "",
+        "label": "Contenido",
+        "valueType": "string"
+      }
+    ]
   }
 ]
