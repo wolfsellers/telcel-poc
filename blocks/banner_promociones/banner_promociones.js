@@ -1,4 +1,4 @@
-import { createSlider } from '../../scripts/slides.js';
+import createSlider from '../../scripts/slides.js';
 
 export default function decorate(block) {
   const [wrapper] = block.children;

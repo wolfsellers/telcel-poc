@@ -6,10 +6,8 @@
  */
 export default function createSlider(container, { timeout = 4000 } = {}) {
   const imgslides = container.querySelectorAll('.slide');
-
   let current = -1;
   let slider;
-
   function fadeNextSlide() {
     imgslides.forEach((img) => {
       img.style.opacity = 0;
@@ -21,7 +19,6 @@ export default function createSlider(container, { timeout = 4000 } = {}) {
 
     slider = setTimeout(fadeNextSlide, timeout);
   }
-
   // Inicia el slider
   fadeNextSlide();
 }
