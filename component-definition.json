@@ -196,7 +196,7 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Imagen Promoción",
-                  "model": "imagen_promocion"
+                  "model": "image"
                 }
               }
             }
