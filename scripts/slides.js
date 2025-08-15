@@ -41,7 +41,7 @@ export default function createSlider(container, { timeout = 4000 } = {}) {
       li.dataset.numb = index;
       li.textContent = count;
       ul.appendChild(li);
-      i += 1;
+      count += 1;
     });
     container.appendChild(ul);
   }
