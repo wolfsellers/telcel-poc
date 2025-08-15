@@ -41,9 +41,21 @@ export default function createSlider(container, { timeout = 4000 } = {}) {
       li.dataset.numb = index;
       li.textContent = count;
       ul.appendChild(li);
-      count++;
+      i += 1;
     });
     container.appendChild(ul);
+  }
+
+  /**
+   * Se maneja active de slides y dots de manera dinamica
+  */
+  function handleActiveSlide() {
+    const liItem = container.querySelectorAll('.slide-dot');
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      liItem[i].classList.remove('active');
+    });
+    liItem[current].classList.add('active');
   }
 
   /**
@@ -81,21 +93,8 @@ export default function createSlider(container, { timeout = 4000 } = {}) {
     handleActiveSlide();
 
     slides[current].classList.add('active');
-    liItem[current].classList.add('active');
 
     slider = setTimeout(fadeNextSlide, timeout);
-  }
-
-  /**
-   * Se maneja active de slides y dots de manera dinamica
-  */
-  function handleActiveSlide() {
-    const liItem = container.querySelectorAll('.slide-dot');
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-      liItem[i].classList.remove('active');
-    });
-    liItem[current].classList.add('active');
   }
 
   /**
@@ -106,13 +105,13 @@ export default function createSlider(container, { timeout = 4000 } = {}) {
     const next = container.querySelector('.next');
 
     next?.addEventListener('click', () => {
-        clearTimeout(slider);
-        fadeNextSlide();
+      clearTimeout(slider);
+      fadeNextSlide();
     });
 
     prev?.addEventListener('click', () => {
-        clearTimeout(slider);
-        fadePrevSlide();
+      clearTimeout(slider);
+      fadePrevSlide();
     });
   }
 
@@ -123,10 +122,10 @@ export default function createSlider(container, { timeout = 4000 } = {}) {
     const ul = container.querySelector('.list-dots');
 
     ul?.addEventListener('click', (event) => {
-        if (event.target.dataset.numb) {
-          clearTimeout(slider);
-          goToSlide(parseInt(event.target.dataset.numb, 10));
-        }
+      if (event.target.dataset.numb) {
+        clearTimeout(slider);
+        goToSlide(parseInt(event.target.dataset.numb, 10));
+      }
     });
   }
 
