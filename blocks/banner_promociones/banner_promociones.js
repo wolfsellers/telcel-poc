@@ -1,10 +1,12 @@
 import createSlider from '../../scripts/slides.js';
 
 export default function decorate(block) {
-  const [wrapper] = block.children;
+  const wrappBanner = block.querySelector('.banner_promociones');
 
-  createSlider(wrapper, { timeout: 5000 });
+  const slides = wrappBanner.querySelectorAll('div');
+  slides.forEach((slide) => {
+    slide.classList.add('slide');
+  });
 
-  console.log(block);
-  console.log(wrapper);
+  createSlider(wrappBanner, { timeout: 5000 });
 }

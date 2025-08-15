@@ -182,7 +182,7 @@
                 "template": {
                   "name": "Imagen Promoción",
                   "model": "image",
-                  "classes": "slide"
+                  "class": "slide"
                 }
               }
             }
